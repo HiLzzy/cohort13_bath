@@ -1,0 +1,114 @@
+
+/* @media only screen and (max-width: 600px) {
+    body {
+      background-color: green;
+    }
+  }
+ */
+
+
+/* @media only screen and (max-width: 400px)  */
+    /* html, body  { 
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+}
+} */
+
+* {
+    margin: 0;
+    padding-left: 0%;
+}
+
+body {
+    max-width: 100%;
+    height: auto;
+    color: white;
+    background-color: black;
+    resize: none;
+    /* below: hide excess image left right */
+    overflow-x:hidden;
+}
+.hero {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size:cover;
+    height: 80vh;
+    /* overflow-x:hidden; makes img move up and down*/
+}    
+h1 {   
+    display: block;
+    font-size: 4.8rem;
+    justify-content: center;
+    text-align: center;
+    align-items:flex-start;
+    position:absolute;
+    left: 425px;
+    top: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 40px;
+    font-size: large;
+} 
+a {
+    text-decoration: none;
+    color: white;
+}
+h3 {
+    text-align: center;
+    margin-top: 6%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+}
+h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    font-size: larger;
+    
+}
+#container { 
+    display: flex;
+    justify-content: space-evenly;
+    width: 42%;
+}
+/* #container > .column-1 .column-2 {
+    width: calc(80% / 2);
+    
+} */
+
+#container img {
+    width: 100%;
+    padding: 1rem 0;
+}
+.main-left {
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.main-right {
+    margin-left: 58%;
+    margin-top: -69%;
+}
+.quotes {
+    text-align: center;
+    margin-top: -2%;
+}
+p {
+   
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14.9px; 
+    margin-top: 5%;
+}
+footer {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+}

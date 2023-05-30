@@ -1,0 +1,55 @@
+
+body, figure, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    background-color: linen; 
+  }
+  header {
+    background-color: #631c45e6;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+  }
+  header h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  main {
+    margin: 20px;
+  }
+  .case-study {
+    display:flex;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .case-study img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .case-details {
+    margin-left: 20px;
+  }
+  .case-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .case-details p {
+    margin-bottom: 10px;
+  }
+  .case-details a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  footer {
+    background-color: #631c46; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+  }
