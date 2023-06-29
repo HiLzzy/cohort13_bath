@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="togglePage.css">
+    <script defer src="togglePage.js"> </script>
+   
+    <title>Toggle</title>
+
+    <style>
+
+    body {
+        margin: 0%;
+        padding: 0%;
+        background: linear-gradient(-445deg, white,#13a8ea,#0076d0) ; 
+    }
+
+    img {
+        cursor: pointer;
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1, p {
+        text-align: center;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h1>My Dark Mode Javascript Toggle Attempt With Images</h1>
+
+    <p>Click image to toggle between modes</p>
+
+    <figure>
+        <img class="dayLight" id="toggleDark" src="assets/dayLight.avif" alt="Image of brightly coloured buildings">
+    </figure>
+    
+    <script>
+
+        const toggle = document.getElementById('toggleDark');
+        const body = document.querySelector('body');
+
+        toggle.addEventListener('click', function(){
+            // this.classList.toggle("assets/sneakyMoon.avif");
+            if(this.classList.toggle("dayLight")){
+                body.style.background = 'white';
+                body.style.color = 'black';
+                body.style.transition = '3s';
+
+            } else {
+                body.style.background = 'black';
+                body.style.color = 'white';
+            }
+        })
+    </script>
+</body>
+</html>
